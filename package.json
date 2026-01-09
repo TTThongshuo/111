@@ -1,0 +1,14 @@
+{
+  "name": "ai-photo-magnet-kiosk",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w server & npm run dev -w kiosk & npm run dev -w admin",
+    "dev:server": "npm run dev -w server",
+    "dev:kiosk": "npm run dev -w kiosk",
+    "dev:admin": "npm run dev -w admin"
+  }
+}
+
